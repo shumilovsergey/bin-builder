@@ -1,0 +1,10 @@
+.DS_Store
+
+# Локальная копия, которую создаёт tools/sync_shumilov_builds.sh
+shumilov_builds/
+
+# В builds/ храним только рецепты, бинарники каждый собирает сам
+builds/*/*
+!builds/*/Dockerfile
+!builds/*/docker-compose.yml
+!builds/*/README.md
